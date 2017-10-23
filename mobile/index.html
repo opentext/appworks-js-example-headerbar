@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Header Button Demo</title>
+    <link rel="stylesheet" href="css/style.css"></link>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="appworks.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </head>
+  <body>
+
+    <div id="intro-wrapper">
+      <div id="intro">
+        <div style="font-weight:bold; text-align:center; margin-bottom:8px;">Header Button Demo</div>
+        <p>You have a few buttons buttons below which set and reset the header buttons (the ones up there ^^ on the left and right).</P>
+        <p>You can also mask and unmask the header to fit in with your UI.</P>
+        <p>&quot;Set Header Buttons&quot; is invoked when the page loads, and changes the buttons</p>
+        <p>&quot;Set Hamburger Button&quot; sets the second left button the menu icon</p>
+        <p>&quot;Set Text Buttons&quot; sets the left and right buttons to text</p>
+        <p>&quot;Reset Header Buttons&quot; sets all buttons to their default state</p>
+      </div>
+    </div>
+
+    <div id="content-wrapper">
+      <div><button type="button" id="go0-button" class="go-button vertical-space" onclick="setHeaderButtons();">Set Header Buttons</button></div>
+      <div><button type="button" id="go1-button" class="go-button vertical-space" onclick="setHamburgerMenu();">Set Hamburger Button</button></div>
+      <div><button type="button" id="go2-button" class="go-button vertical-space" onclick="setTextButtons();">Set Text Buttons</button></div>
+      <div><button type="button" id="go3-button" class="go-button vertical-space" onclick="resetHeaderButtons();">Reset Header Buttons</button></div>
+
+      <div><button type="button" id="go4-button" class="go-button vertical-space" onclick="maskHeader(true);">Mask the header</button></div>
+      <div><button type="button" id="go5-button" class="go-button vertical-space" onclick="maskHeader(false);">Unmask the header</button></div>
+    </div>
+
+    <div id="version">Version 0.0.4</div>
+  </body>
+</html>
