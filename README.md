@@ -1,4 +1,4 @@
-# AppWorks Example - Auth
+# AppWorks Example - AWHeaderBar
 
 ## Contents
 1. [About appworks.js](#about-appworksjs)
